@@ -14,7 +14,7 @@ const useCurrentTimeInSeconds = ()=> {
       if (seconds > 86400) {
         setSeconds(0);
       }
-    }, 10000);
+    }, 30000);
     return () => clearInterval(intervalId);
   }, [seconds]);
 
